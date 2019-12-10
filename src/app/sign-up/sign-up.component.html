@@ -1,1 +1,15 @@
-<p>sign-up works!</p>
+<div class="sign-up-form">
+    <div class="sign-up-field">
+        <label for="sign-up-name" class="sign-up-label">Имя</label>
+        <input [(ngModel)]="newUser.name" type="text" name="sign-up-name" id="sign-up-name" class="sign-up-input">
+    </div>
+    <div class="sign-up-field">
+        <label for="sign-up-email" class="sign-up-label">Email</label>
+        <input [(ngModel)]="newUser.email" type="email" name="sign-up-email" id="sign-up-email" class="sign-up-input">
+    </div>
+    <div class="sign-up-field">
+        <label for="sign-up-password" class="sign-up-label">Пароль</label>
+        <input [(ngModel)]="newUser.password" type="text" name="sign-up-password" id="sign-up-password" class="sign-up-input">
+    </div>
+    <button (click)="signUpUser()" class="sign-up-button">Зарегестрироваться</button>
+</div>

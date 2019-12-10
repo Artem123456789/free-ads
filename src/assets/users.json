@@ -1,0 +1,21 @@
+[
+    {
+        "id": 0, 
+        "name": "Иванов Иван Иванович", 
+        "email": "ivanov@example.com", 
+        "password": "passwordIvan0"
+    },
+    {
+        "id": 1,
+        "name": "Петров Петр Петрович", 
+        "email": "petrov@example.com", 
+        "password": "passwordPetr1"
+    },
+    {
+        "id": 2, 
+        "name": "Федоров Федор Федорович", 
+        "email": "fedorov@example.com", 
+        "password": 
+        "passwordFetor2"
+    }
+]
