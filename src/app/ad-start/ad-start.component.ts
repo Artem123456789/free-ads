@@ -8,11 +8,15 @@ import { Ad } from '../classes/ad/ad';
 })
 export class AdStartComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+  }
 
   ngOnInit() {
+    this.pathToAdPage = `/add/${this.ad.id}`;
   }
 
   @Input() ad: Ad;
+
+  private pathToAdPage: string;
 
 }
