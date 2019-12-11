@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AdsService } from '../services/ads.service';
 
 @Component({
   selector: 'app-start-page',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private adsService: AdsService) { 
+  }
 
   ngOnInit() {
   }
