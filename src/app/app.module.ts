@@ -10,6 +10,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { AccountComponent } from './account/account.component';
 import { AddAdComponent } from './add-ad/add-ad.component';
 import { SingleAdComponent } from './single-ad/single-ad.component';
+import { AdStartComponent } from './ad-start/ad-start.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SingleAdComponent } from './single-ad/single-ad.component';
     SignUpComponent,
     AccountComponent,
     AddAdComponent,
-    SingleAdComponent
+    SingleAdComponent,
+    AdStartComponent
   ],
   imports: [
     BrowserModule,
