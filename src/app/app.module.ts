@@ -11,6 +11,7 @@ import { AccountComponent } from './account/account.component';
 import { AddAdComponent } from './add-ad/add-ad.component';
 import { SingleAdComponent } from './single-ad/single-ad.component';
 import { AdStartComponent } from './ad-start/ad-start.component';
+import { StartPageComponent } from './start-page/start-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AdStartComponent } from './ad-start/ad-start.component';
     AccountComponent,
     AddAdComponent,
     SingleAdComponent,
-    AdStartComponent
+    AdStartComponent,
+    StartPageComponent
   ],
   imports: [
     BrowserModule,
