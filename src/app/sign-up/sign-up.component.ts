@@ -11,7 +11,7 @@ import { User } from '../classes/user/user';
 export class SignUpComponent implements OnInit {
 
   constructor(private usersService: UsersService) {
-    this.newUser = new User(this.usersService.users.length, "Васильев Василий Васильевич", "vasiliev@mail.com", "dwsedw");
+    this.newUser = new User(0, "Васильев Василий Васильевич", "vasiliev@mail.com", "dwsedw");
   }
 
   ngOnInit() {

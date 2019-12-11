@@ -25,14 +25,22 @@ export class UsersService {
     return this._users;
   }
 
-  public signUpUser(newUser: User){
-    this._users.push({
-      id: newUser.id, 
+  public signUpUser(newUser: User): void{
+    this.users.push({
+      id: this.users.length, 
       name: newUser.name,
       email: newUser.email,
       password: newUser.password
     });
-    console.log(this._users);
+    console.log(this.users);
+  }
+
+  public loginUser(logedUser: User): boolean{
+    let userLoged: boolean = false;
+    this.users.map(user=>{
+      if((user.email == logedUser.email) && (user.password == logedUser.password)) userLoged = true;
+    })
+    return userLoged;
   }
 
 }

@@ -1,1 +1,14 @@
-<p>login works!</p>
+<div class="login-form">
+    <div class="login-field">
+        <label class="login-label" for="">Email</label>
+        <input [(ngModel)]="loginUser.email" class="login-input" type="text">
+    </div>
+    <div class="login-field">
+        <label class="login-label" for="">Пароль</label>
+        <input [(ngModel)]="loginUser.password" class="login-input" type="text">
+    </div>
+    <button (click)="login()" class="login-button">Войти</button>
+    <span *ngIf="showLogin">
+        <span [style.color]="loginResult==true ? 'green' : 'red'">{{ loginText }}</span>
+    </span>
+</div>
