@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Ad } from '../classes/ad/ad';
 
 @Component({
   selector: 'app-ad-start',
@@ -11,5 +12,7 @@ export class AdStartComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  @Input() ad: Ad;
 
 }
