@@ -1,4 +1,7 @@
-<div class="ad-header">{{ ad.name }}</div>
-<div class="ad-text">{{ ad.text }}</div>
-<div class="ad-category">{{ ad.category }}</div>
-<a routerLink="['/ads', 'ad.id']">Перейти</a>
+<span class="ad-header">{{ ad.name }}</span>
+<span class="ad-text">{{ ad.text }}</span>
+<div class="ad-category-text">
+    Катерогия:
+    <span class="ad-category">{{ ad.category }}</span>
+</div>
+<a [routerLink]="['/ads', 'ad.id']">Перейти</a>
