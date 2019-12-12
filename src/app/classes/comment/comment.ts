@@ -5,7 +5,7 @@ export class Comment {
     private _text: string;
     private _date: Date;
 
-    constructor(id: number, authorName: string, text: string, date: Date){
+    constructor(id: number = 0, authorName: string = "", text: string = "", date: Date = new Date()){
         this.id = id;
         this.authorName = authorName;
         this.text = text;
@@ -41,7 +41,7 @@ export class Comment {
     }
 
     public set date(date: Date){
-        this._date = Object.assign({}, date);
+        this._date = date;
     }
 
 }

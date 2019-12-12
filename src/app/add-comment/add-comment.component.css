@@ -1,0 +1,14 @@
+:host
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-around;
+    width: 100%;
+    height: 200px;
+}
+
+.comment-label::after
+{
+    content: ":";
+}

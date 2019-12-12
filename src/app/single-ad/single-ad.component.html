@@ -11,6 +11,7 @@
     <div *ngFor="let comment of ad.comments;let index = i;" class="single-ad-comment">
         <span class="comment-author-name">{{ comment.authorName }}</span>
         <span class="comment-text">{{ comment.text }}</span>
-        <span class="comment-date">{{ comment.date | date:"short" }}</span>
+        <span class="comment-date">{{ comment.date }}</span>
     </div>
+    <app-add-ad (onAddComment)="addComment($event)"></app-add-ad>
 </div>

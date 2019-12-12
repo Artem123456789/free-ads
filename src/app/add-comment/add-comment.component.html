@@ -1,0 +1,5 @@
+<label class="comment-label" for="comment-name">Ваше имя</label>
+<input [(ngModel)]="newComment.authorName" type="text" name="comment-name" id="comment-name">
+<label class="comment-label" for="comment-text">Текст</label>
+<input [(ngModel)]="newComment.text" type="text" name="comment-text" id="comment-text">
+<button (click)="addComment()" class="add-comment">Добавить комметарий</button>

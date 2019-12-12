@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { AccountComponent } from './account/account.component';
-import { AddAdComponent } from './add-ad/add-ad.component';
+import { AddCommentComponent } from './add-comment/add-comment.component';
 import { SingleAdComponent } from './single-ad/single-ad.component';
 import { AdStartComponent } from './ad-start/ad-start.component';
 import { StartPageComponent } from './start-page/start-page.component';
@@ -19,7 +19,7 @@ import { StartPageComponent } from './start-page/start-page.component';
     LoginComponent,
     SignUpComponent,
     AccountComponent,
-    AddAdComponent,
+    AddCommentComponent,
     SingleAdComponent,
     AdStartComponent,
     StartPageComponent

@@ -20,6 +20,16 @@ export class SingleAdComponent implements OnInit {
   }
 
   private adId: number;
-  private ad: Ad;
+  private ad: any;
+
+  private addComment(newComment: Comment){
+    newComment.id = this.ad.comments.length;
+    this.ad.comments.push({
+      id: newComment.id,
+      authorName: newComment.authorName,
+      text: newComment.text,
+      date: `${newComment.date.getFullYear()}-${newComment.date.getMonth() + 1}-${newComment.date.getUTCDate()}`
+    });
+  }
 
 }
