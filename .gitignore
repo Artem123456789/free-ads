@@ -44,3 +44,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+src/app/add-ad/add-ad.component.css
+src/app/add-ad/add-ad.component.css
+src/app/add-ad/add-ad.component.ts
+src/app/add-ad/add-ad.component.css
